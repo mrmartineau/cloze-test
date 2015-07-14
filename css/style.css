@@ -1,3 +1,9 @@
+body {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 /*#result_content p,
 #keyword_content p {
 	padding:0 0 1em 0;
@@ -63,7 +69,7 @@ h3 {
 }
 
 footer {
-		text-align: center;
-		margin-top: 30px;
-		font-size: 0.8em;
+	text-align: center;
+	margin-top: 30px;
+	font-size: 0.8em;
 }
