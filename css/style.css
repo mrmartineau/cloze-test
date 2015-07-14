@@ -1,0 +1,69 @@
+/*#result_content p,
+#keyword_content p {
+	padding:0 0 1em 0;
+}*/
+.input {
+		height: 150px;
+		width: 100%;
+		font-size: 14px;
+		line-height: 1.3;
+}
+#result, #keywords {
+		float:left;
+		border-top: 3px solid #ddd;
+		padding-top: 20px;
+	}
+#result {
+		width: 65%;
+		margin-right: 5%;
+}
+#input, #result div, #keywords div {
+		border: 1px solid #ddd;
+		margin: 10px 0 20px;
+		min-height: 40px;
+		padding: 15px;
+}
+#keywords {
+	width: 30%;
+}
+h3 {
+	margin-top: 0;
+}
+#result_content span:hover,#keyword_content span:hover {
+		color: black;
+		background-color: #c7c7c7;
+		cursor: pointer;
+}
+#result_content,#keyword_content {
+	font-size: 16px;
+}
+
+.success {
+	color: green;
+}
+
+.error {
+	color: red;
+}
+
+.test-input {
+	padding: none;
+	border: none;
+	font-size: 1em;
+	height: auto;
+	margin: 0;
+	line-height: 1;
+	padding: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+footer {
+		text-align: center;
+		margin-top: 30px;
+		font-size: 0.8em;
+}
