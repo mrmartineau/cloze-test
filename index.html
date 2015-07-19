@@ -13,9 +13,20 @@
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
 <body>
+
 	<div id="main" class="entry">
 		<h1 class="text-centre">Cloze test creator</h1>
 		<p class="text-centre">How can this be improved? Please make your suggestions <a href="https://github.com/mrmartineau/cloze-test/issues/new">here</a></p>
+
+		<div id="clozeTest"></div>
+
+		<footer>
+			<p><a href="http://en.wikipedia.org/wiki/Cloze_test" title="Cloze Test info">Cloze Test info</a> | Built by <a href="http://martineau.tv/">Zander Martineau</a></p>
+		</footer>
+	</div><!--!/#container -->
+
+
+	<script id='template-clozeTest' type='text/ractive'>
 		<div class="group">
 			<h3>1. Paste in text</h3>
 			<div id="placeholders" class="fr">
@@ -26,13 +37,13 @@
 				</small>
 			</div>
 		</div>
-		<textarea id="input" class="input" autofocus></textarea>
+		<textarea id="input" class="input" autofocus value="{{input}}"></textarea>
 		<div class="group">
 			<div id="result">
 				<h3>2. Click the words below that you want to hide</h3>
 				<p><small>Click words only once</small></p>
 				<!-- <button id="#select">Select all text below</button> -->
-				<div id="result_content"></div>
+				<div id="result_content">{{input}}</div>
 			</div><!-- /results -->
 			<div id="keywords">
 				<h3>3. Keywords</h3>
@@ -41,10 +52,8 @@
 				<button id="#random" class="btn">Randomise</button>
 			</div><!-- /keywords -->
 		</div>
-		<footer>
-			<p><a href="http://en.wikipedia.org/wiki/Cloze_test" title="Cloze Test info">Cloze Test info</a> | Built by <a href="http://martineau.tv/">Zander Martineau</a></p>
-		</footer>
-	</div><!--!/#container -->
+	</script>
+	<script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/script.js"></script>

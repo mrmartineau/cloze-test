@@ -1,3 +1,14 @@
+var clozeTest = new Ractive({
+	el: '#clozeTest',
+	template: '#template-clozeTest',
+
+	data: {
+		input: 'Add your own text here..'
+	}
+
+});
+
+
 //Randomise plugin
 (function($) {
 	$.fn.randomize = function(childElem) {
