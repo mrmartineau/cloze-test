@@ -3,7 +3,9 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-
+.group {
+	overflow: hidden;
+}
 /*#result_content p,
 #keyword_content p {
 	padding:0 0 1em 0;
@@ -35,12 +37,14 @@ body {
 h3 {
 	margin-top: 0;
 }
-#result_content span:hover,#keyword_content span:hover {
+#result_content span:hover,
+#keyword_content span:hover {
 		color: black;
 		background-color: #c7c7c7;
 		cursor: pointer;
 }
-#result_content,#keyword_content {
+#result_content,
+#keyword_content {
 	font-size: 16px;
 }
 
@@ -53,19 +57,18 @@ h3 {
 }
 
 .test-input {
-	padding: none;
-	border: none;
+	border: 0;
+	border-bottom: 2px solid #444;
 	font-size: 1em;
 	height: auto;
 	margin: 0;
 	line-height: 1;
 	padding: 0;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
+	background-color: transparent;
 	box-shadow: none;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
 	border-radius: 0;
+	-webkit-appearance: none;
+
 }
 
 footer {

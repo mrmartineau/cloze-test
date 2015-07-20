@@ -70,6 +70,8 @@ $(function() {
 			//Need to match word, add a success message (tick maybe) & then replace input with correct text that is highlighted.
 		} else {
 			incrementNumber();
+
+			// Item moved to the Keywords area
 			$(this).attr({id: 'item' + number})
 				.addClass('selected')
 				.clone()
@@ -77,7 +79,8 @@ $(function() {
 				.appendTo('#keyword_content')
 			;
 
-			$(this).html('<input type="text" placeholder="?"/>')
+			// Items in the 'hide' area
+			$(this).html('(' + number + ') <input type="text"/>')
 				.find('input')
 				.addClass('test-input')
 				.attr({name: thisTxt})
