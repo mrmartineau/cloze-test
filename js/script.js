@@ -10,6 +10,13 @@ var clozeTest = new Ractive({
 
 	data: {
 		input: 'Add your own text here..'
+	},
+
+	computed: {
+		inputRegex: function() {
+			var input = this.get('input');
+			return input.replace(/(\w+)/g,'<span>$1</span>').replace(/\n/g,'<br/>');
+		}
 	}
 
 });
@@ -46,13 +53,6 @@ clozeTest.on('eg-pangram', function() {
 })(jQuery);
 
 $(function() {
-	//Textarea move to result box
-	$('textarea').bind('keyup',function() {
-		$('#result_content').text($('textarea').val());
-		$('#result_content')
-			.html('<span>'+$('#result_content')
-				.html().replace(/( |"|\(|\)|\[|\]|'|:|;|\?|\!|\/|\/\/ |, |\.)/g,'</span>$1<span>').replace(/\n/g,'</span><br /><br /><span>')+'</span>')
-	});
 
 	//Increment number
 	var number = 0;
