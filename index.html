@@ -6,22 +6,19 @@
 		<title>Cloze Test Generator by Zander Martineau</title>
 		<meta name="description" content="Zander Martineau is a London-based Creative Technologist working at TMW. This is a selection of my best work over the last few years.">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="http://martineau.tv/css/kickoff.css">
+		<link rel="stylesheet" href="css/trykickoff.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script>var pageName = 'cloze';</script>
-		<script type="text/javascript" src="//use.typekit.net/zsa7ozf.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
 <body>
 
-	<div id="main" class="entry">
+	<div id="main" class="entry l-container">
 		<h1 class="text-centre">Cloze test creator</h1>
-		<p class="text-centre">How can this be improved? Please make your suggestions <a href="https://github.com/mrmartineau/cloze-test/issues/new">here</a></p>
-
 		<div id="clozeTest"></div>
 
 		<footer>
-			<p><a href="http://en.wikipedia.org/wiki/Cloze_test" title="Cloze Test info">Cloze Test info</a> | Built by <a href="http://martineau.tv/">Zander Martineau</a></p>
+			<p class="text-centre">How can this be improved? Please make your suggestions <a href="https://github.com/mrmartineau/cloze-test/issues/new">here</a></p>
+			<p><a href="http://en.wikipedia.org/wiki/Cloze_test" title="Cloze Test info">Cloze Test info</a> | Built by <a href="http://zander.wtf">Zander ⚡</a></p>
 		</footer>
 	</div><!--!/#container -->
 
@@ -38,29 +35,29 @@
 			</div>
 		</div>
 
-		<textarea id="input" class="input" autofocus value="{{input}}"></textarea>
+		<textarea id="input" class="form-input form-input--textarea" autofocus value="{{input}}"></textarea>
 
 		<div class="group">
 			<div id="result">
 				<h3>2. Click the words below that you want to hide</h3>
 				<p><small>Click words only once</small></p>
 				<!-- <button id="#select">Select all text below</button> -->
-				<div id="result_content">{{{inputRegex}}}</div>
+				<div id="result_content" class="form-input form-input--textarea">{{{inputRegex}}}</div>
 			</div><!-- /results -->
 
 			<div id="keywords">
 				<h3>3. Keywords</h3>
 				<p><small>Click again to remove from this list &amp; replace the words back into the main body of text.</small></p>
-				<div id="keyword_content"></div>
+				<div id="keyword_content" class="form-input form-input--textarea"></div>
 				<button id="#random" class="btn">Randomise</button>
 			</div><!-- /keywords -->
 
 		</div>
 	</script>
 
-	<script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/ractive/1.0.0-build-154/ractive.min.js'></script>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 
 	<script type="text/javascript">
